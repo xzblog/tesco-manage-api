@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="/public/css/normalize.css">
+    <link href="/public/css/index.css" rel="stylesheet" />
+</head>
+
+<body class="bg">
+    <div class="dialog">
+        <div class="title">
+            <h4 class="text" style="margin-top: 30px">欢迎注册Tesco官网</h4>
+        </div>
+        <div class="form-group">
+            <form name="login" autocomplete="off">
+                <div class="input-group">
+                    <span class="icon"><i class="user"></i></span>
+                    <input type="text" placeholder="手机号">
+                </div>
+                <div class="verify">
+                    <div class="input-group">
+                        <span class="icon"><i class="captcha"></i></span>
+                        <input type="text" placeholder="验证码">
+                    </div>
+                    <img class="code-img" src="/captcha" onclick="javascript:this.src='/captcha?mt='+Math.random()">
+                </div>
+                <div class="verify">
+                    <div class="input-group">
+                        <span class="icon"><i class="captcha"></i></span>
+                        <input type="text" placeholder="验证码">
+                    </div>
+                    <a role="button" class="code-btn disabled">点击发送</a>
+                </div>
+                <div class="input-group">
+                    <span class="icon"><i class="pwd"></i></span>
+                    <input type="password" placeholder="密码">
+                </div>
+                <div class="input-group">
+                    <span class="icon"><i class="pwd"></i></span>
+                    <input type="password" placeholder="重复密码">
+                </div>
+                <div class="other-operation clearfix">
+                    <div class="remember">
+                        <input type="checkbox">
+                        我已阅读并同意遵守 <a href="">法律声明</a> 和 <a href="">隐私条款</a>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper">
+                    <div class="btn btn-primary disabled"><a role="button">注册</a></div>
+                </div>
+                <div class="info-wrapper">
+                    如果您已拥有 Tesco ID，则可在 <a class="login-btn" href="/login">此登录</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="copy">
+        <p>Copyright © 2019, Yogoo Digital Co. Ltd. All Rights Reserved.️杭州拓峰数据技术有限公司</p>
+        <p>浙ICP备14041720号-1</p>
+    </div>
+</body>
+</html>
